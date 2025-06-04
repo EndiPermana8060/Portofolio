@@ -1,0 +1,56 @@
+.text-section {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.about-section {
+  background: #222831;
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.text-orange {
+  color: #ff5722;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.floating-icon {
+  position: absolute;
+  border-radius: 10%;  /* Ini yang membuat gambar jadi bulat */
+  object-fit: cover;   /* Untuk memastikan gambar tidak terdistorsi */
+  width: 60px;
+  height: 60px;
+  animation: float 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+.icon-ai {
+  bottom: 250px;
+  right: 80px;
+}
+
+.icon-ps {
+  top: 60px;
+  left: 80px;
+}
+
+.icon-figma {
+  top: 250px;
+  right: 20%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
